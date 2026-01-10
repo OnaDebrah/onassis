@@ -10,6 +10,7 @@ import { cn } from "@/lib/utils";
 //import { FileExplorer } from "./file-explorer";
 import { Id } from "../../../../convex/_generated/dataModel";
 import {FileExplorer} from "@/features/projects/components/file-exploerer";
+import {EditorView} from "@/features/editor/components/editor-view";
 
 const MIN_SIDEBAR_WIDTH = 200;
 const MAX_SIDEBAR_WIDTH = 800;
@@ -80,7 +81,7 @@ export const ProjectIdView = ({
                             <FileExplorer projectId={projectId} />
                         </Allotment.Pane>
                         <Allotment.Pane>
-                            EditorView   {/*<EditorView projectId={projectId} />*/}
+                            <EditorView projectId={projectId} />
                         </Allotment.Pane>
                     </Allotment>
                 </div>
