@@ -202,7 +202,8 @@ export const Tree = ({
                 onClick={() => setIsOpen((value) => !value)}
                 onRename={() => setIsRenaming(true)}
                 onDelete={() => {
-                    deleteFile({ id: item._id })
+                    // TODO: Close tabs for all files within this folder
+                    deleteFile({ id: item._id });
                 }}
                 onCreateFile={() => startCreating("file")}
                 onCreateFolder={() => startCreating("folder")}
