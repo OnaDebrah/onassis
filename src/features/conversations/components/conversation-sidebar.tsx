@@ -180,7 +180,7 @@
 //                 >
 //                     <PromptInputBody>
 //                         <PromptInputTextarea
-//                             placeholder="Ask Polaris anything..."
+//                             placeholder="Ask Onassis anything..."
 //                             onChange={(e) => setInput(e.target.value)}
 //                             value={input}
 //                             disabled={isProcessing}
