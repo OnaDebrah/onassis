@@ -50,7 +50,7 @@ export const CreateInput = ({
                 onBlur={handleSubmit}
                 onKeyDown={(e) => {
                     if (e.key === "Enter") {
-                        handleSubmit();
+                        e.currentTarget.blur();
                     }
                     if (e.key === "Escape") {
                         onCancel();
