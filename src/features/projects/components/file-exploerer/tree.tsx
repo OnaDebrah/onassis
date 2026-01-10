@@ -140,6 +140,7 @@ export const Tree = ({
                     onClick={() => setIsOpen((value) => !value)}
                     className="group flex items-center gap-1 h-5.5 hover:bg-accent/30 w-full"
                     style={{ paddingLeft: getItemPadding(level, false) }}
+                    aria-label={`${isOpen ? 'Collapse' : 'Expand'} folder ${folderName}`}
                 >
                     {folderRender}
                 </button>
